@@ -57,6 +57,9 @@ links[3].textContent = 'Features';
 links[4].textContent = 'About';
 links[5].textContent = 'Contact';
 
+//Change navigation links to color 'green'
+links.forEach(item => (item.style.color = 'green'));
+
 //cta
 const cta = document.querySelector('.cta-text h1');
 cta.textContent = 'DOM is Awesome';
