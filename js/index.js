@@ -73,11 +73,16 @@ headerImage.src = 'img/header-img.png';
 const middleImage = document.querySelector('#middle-img');
 middleImage.src = 'img/mid-page-accent.jpg';
 
-//footer
+//contact
 const footerTitle = document.querySelector('.contact h4');
 footerTitle.textContent = 'Contact';
 
-const footerText = document.querySelectorAll('.contact p');
-footerText[0].textContent = '123 Way 456 Street Somewhere, USA';
-footerText[1].textContent = '1 (888) 888-8888';
-footerText[2].textContent = 'sales@greatidea.io';
+const contactText = document.querySelectorAll('.contact p');
+contactText[0].textContent = '123 Way 456 Street Somewhere, USA';
+contactText[1].textContent = '1 (888) 888-8888';
+contactText[2].textContent = 'sales@greatidea.io';
+
+//footer
+const copyTitle = document.querySelector('footer p');
+console.log(copyTitle);
+copyTitle.textContent = 'Copyright Great Idea! 2018';
