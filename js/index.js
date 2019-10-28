@@ -84,9 +84,34 @@ navElementTwo.prepend(secondATag);
 
 secondATag.style.color = 'green';
 
-//cta
-const cta = document.querySelector('.cta-text h1');
-cta.textContent = 'DOM is Awesome';
+//cta -> this works without breaks wrapping
+// const cta = document.querySelector('.cta-text h1');
+// cta.textContent = 'DOM is Awesome';
+// cta.style.flexWrap = 'wrap';
+const ctaCollection = document.querySelector('.cta-text h1');
+
+const ctaOne = document.createTextNode('DOM');
+console.log(ctaOne);
+
+const brOne = document.createElement('br');
+console.log(brOne);
+
+const ctaTwo = document.createTextNode('is');
+console.log(ctaTwo);
+
+const brTwo = document.createElement('br');
+console.log(brTwo);
+
+const ctaThree = document.createTextNode('Awesome');
+console.log(ctaThree);
+
+ctaCollection.append(ctaOne);
+ctaCollection.append(brOne);
+ctaCollection.append(ctaTwo);
+ctaCollection.append(brTwo);
+ctaCollection.append(ctaThree);
+
+console.log(ctaCollection);
 
 //cta button
 const ctaButton = document.querySelector('.cta-text button');
@@ -127,7 +152,7 @@ servicesTitle[2].textContent = 'Vision';
 const servicesContent = document.querySelectorAll(
   '.bottom-content .text-content p'
 );
-console.log(servicesContent);
+
 servicesContent[0].textContent =
   'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 servicesContent[1].textContent =
