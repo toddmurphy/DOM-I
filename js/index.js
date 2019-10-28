@@ -68,3 +68,16 @@ ctaButton.textContent = 'Get Started';
 //cta header image
 const headerImage = document.querySelector('#cta-img');
 headerImage.src = 'img/header-img.png';
+
+//middle page image
+const middleImage = document.querySelector('#middle-img');
+middleImage.src = 'img/mid-page-accent.jpg';
+
+//footer
+const footerTitle = document.querySelector('.contact h4');
+footerTitle.textContent = 'Contact';
+
+const footerText = document.querySelectorAll('.contact p');
+footerText[0].textContent = '123 Way 456 Street Somewhere, USA';
+footerText[1].textContent = '1 (888) 888-8888';
+footerText[2].textContent = 'sales@greatidea.io';
