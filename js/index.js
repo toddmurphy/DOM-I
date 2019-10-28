@@ -87,6 +87,27 @@ featureContent[1].textContent =
 const middleImage = document.querySelector('#middle-img');
 middleImage.src = 'img/mid-page-accent.jpg';
 
+//Services titles and content
+//Services titles
+const servicesTitle = document.querySelectorAll(
+  '.bottom-content .text-content h4'
+);
+servicesTitle[0].textContent = 'Services';
+servicesTitle[1].textContent = 'Product';
+servicesTitle[2].textContent = 'Vision';
+
+//Services content
+const servicesContent = document.querySelectorAll(
+  '.bottom-content .text-content p'
+);
+console.log(servicesContent);
+servicesContent[0].textContent =
+  'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+servicesContent[1].textContent =
+  'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+servicesContent[2].textContent =
+  'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+
 //contact
 const footerTitle = document.querySelector('.contact h4');
 footerTitle.textContent = 'Contact';
@@ -98,5 +119,5 @@ contactText[2].textContent = 'sales@greatidea.io';
 
 //footer
 const copyTitle = document.querySelector('footer p');
-console.log(copyTitle);
+
 copyTitle.textContent = 'Copyright Great Idea! 2018';
