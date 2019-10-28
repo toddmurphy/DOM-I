@@ -69,6 +69,20 @@ ctaButton.textContent = 'Get Started';
 const headerImage = document.querySelector('#cta-img');
 headerImage.src = 'img/header-img.png';
 
+//Features and About Title
+const featureTitle = document.querySelectorAll('.top-content .text-content h4');
+featureTitle[0].textContent = 'Features';
+featureTitle[1].textContent = 'About';
+
+//Features and About content
+const featureContent = document.querySelectorAll(
+  '.top-content .text-content p'
+);
+featureContent[0].textContent =
+  'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+featureContent[1].textContent =
+  'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+
 //middle page image
 const middleImage = document.querySelector('#middle-img');
 middleImage.src = 'img/mid-page-accent.jpg';
