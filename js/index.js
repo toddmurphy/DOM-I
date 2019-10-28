@@ -73,6 +73,17 @@ newATag.textContent = 'Pricing';
 //Step 4: Finally, we add the child(pricing) to the element we created(nav);
 navElement.appendChild(newATag);
 
+newATag.style.color = 'green';
+
+//2nd nav item - use '.prepend' to add to beginning
+const navElementTwo = document.querySelector('nav');
+
+const secondATag = document.createElement('a');
+secondATag.textContent = 'Blog';
+navElementTwo.prepend(secondATag);
+
+secondATag.style.color = 'green';
+
 //cta
 const cta = document.querySelector('.cta-text h1');
 cta.textContent = 'DOM is Awesome';
