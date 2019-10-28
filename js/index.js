@@ -60,6 +60,19 @@ links[5].textContent = 'Contact';
 //Change navigation links to color 'green'
 links.forEach(item => (item.style.color = 'green'));
 
+//Add two new elements -> add two 'a' to <nav> using appendChild()
+//Step 1: Select the element we want to add 'a' to
+const navElement = document.querySelector('nav');
+
+//Step 2: use 'createElement' to add new 'a' to navElement
+const newATag = document.createElement('a');
+
+//Step 3: use textContent to add a name
+newATag.textContent = 'Pricing';
+
+//Step 4: Finally, we add the child(pricing) to the element we created(nav);
+navElement.appendChild(newATag);
+
 //cta
 const cta = document.querySelector('.cta-text h1');
 cta.textContent = 'DOM is Awesome';
