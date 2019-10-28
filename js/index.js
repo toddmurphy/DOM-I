@@ -125,6 +125,10 @@ headerImage.src = 'img/header-img.png';
 const featureTitle = document.querySelectorAll('.top-content .text-content h4');
 featureTitle[0].textContent = 'Features';
 featureTitle[1].textContent = 'About';
+featureTitle[0].style.background = 'black';
+featureTitle[0].style.color = 'white';
+featureTitle[1].style.background = 'black';
+featureTitle[1].style.color = 'white';
 
 //Features and About content
 const featureContent = document.querySelectorAll(
@@ -173,3 +177,6 @@ contactText[2].textContent = 'sales@greatidea.io';
 const copyTitle = document.querySelector('footer p');
 
 copyTitle.textContent = 'Copyright Great Idea! 2018';
+
+copyTitle.style.background = 'blue';
+copyTitle.style.color = 'white';
