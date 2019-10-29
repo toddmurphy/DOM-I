@@ -50,12 +50,12 @@ logo.setAttribute('src', siteContent['nav']['img-src']);
 
 //navigation links
 const links = document.querySelectorAll('a');
-links[0].textContent = 'Services';
-links[1].textContent = 'Product';
-links[2].textContent = 'Vision';
-links[3].textContent = 'Features';
-links[4].textContent = 'About';
-links[5].textContent = 'Contact';
+links[0].textContent = siteContent['nav']['nav-item-1'];
+links[1].textContent = siteContent['nav']['nav-item-2'];
+links[2].textContent = siteContent['nav']['nav-item-3'];
+links[3].textContent = siteContent['nav']['nav-item-4'];
+links[4].textContent = siteContent['nav']['navitem-5'];
+links[5].textContent = siteContent['nav']['nav-item-6'];
 
 //Change navigation links to color 'green'
 links.forEach(item => (item.style.color = 'green'));
@@ -115,16 +115,16 @@ console.log(ctaCollection);
 
 //cta button
 const ctaButton = document.querySelector('.cta-text button');
-ctaButton.textContent = 'Get Started';
+ctaButton.textContent = siteContent['cta']['button'];
 
 //cta header image
 const headerImage = document.querySelector('#cta-img');
-headerImage.src = 'img/header-img.png';
+headerImage.src = siteContent['cta']['img-src'];
 
 //Features and About Title
 const featureTitle = document.querySelectorAll('.top-content .text-content h4');
-featureTitle[0].textContent = 'Features';
-featureTitle[1].textContent = 'About';
+featureTitle[0].textContent = siteContent['main-content']['features-h4'];
+featureTitle[1].textContent = siteContent['main-content']['about-h4'];
 featureTitle[0].style.background = 'black';
 featureTitle[0].style.color = 'white';
 featureTitle[1].style.background = 'black';
@@ -134,23 +134,21 @@ featureTitle[1].style.color = 'white';
 const featureContent = document.querySelectorAll(
   '.top-content .text-content p'
 );
-featureContent[0].textContent =
-  'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
-featureContent[1].textContent =
-  'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+featureContent[0].textContent = siteContent['main-content']['features-content'];
+featureContent[1].textContent = siteContent['main-content']['about-content'];
 
 //middle page image
 const middleImage = document.querySelector('#middle-img');
-middleImage.src = 'img/mid-page-accent.jpg';
+middleImage.src = siteContent['main-content']['middle-img-src'];
 
 //Services titles and content
 //Services titles
 const servicesTitle = document.querySelectorAll(
   '.bottom-content .text-content h4'
 );
-servicesTitle[0].textContent = 'Services';
-servicesTitle[1].textContent = 'Product';
-servicesTitle[2].textContent = 'Vision';
+servicesTitle[0].textContent = siteContent['main-content']['services-h4'];
+servicesTitle[1].textContent = siteContent['main-content']['product-h4'];
+servicesTitle[2].textContent = siteContent['main-content']['vision-h4'];
 
 //Services content
 const servicesContent = document.querySelectorAll(
@@ -158,25 +156,23 @@ const servicesContent = document.querySelectorAll(
 );
 
 servicesContent[0].textContent =
-  'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
-servicesContent[1].textContent =
-  'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
-servicesContent[2].textContent =
-  'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+  siteContent['main-content']['services-content'];
+servicesContent[1].textContent = siteContent['main-content']['product-content'];
+servicesContent[2].textContent = siteContent['main-content']['vision-content'];
 
 //contact
 const footerTitle = document.querySelector('.contact h4');
-footerTitle.textContent = 'Contact';
+footerTitle.textContent = siteContent['contact']['contact-h4'];
 
 const contactText = document.querySelectorAll('.contact p');
-contactText[0].textContent = '123 Way 456 Street Somewhere, USA';
-contactText[1].textContent = '1 (888) 888-8888';
-contactText[2].textContent = 'sales@greatidea.io';
+contactText[0].textContent = siteContent['contact']['address'];
+contactText[1].textContent = siteContent['contact']['phone'];
+contactText[2].textContent = siteContent['contact']['email'];
 
 //footer
 const copyTitle = document.querySelector('footer p');
 
-copyTitle.textContent = 'Copyright Great Idea! 2018';
+copyTitle.textContent = siteContent['footer']['copyright'];
 
 copyTitle.style.background = 'blue';
 copyTitle.style.color = 'white';
